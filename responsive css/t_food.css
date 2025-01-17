@@ -211,6 +211,16 @@ a {
 
 
 /* home section  */
+.home__container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    gap: 2rem; 
+}
+
 .home__title {
     font-size: 3rem;
     color: var(--first-color);
@@ -468,6 +478,14 @@ a {
 /* ------ media query -----   */
 
 @media (min-width: 576px) {
+    .home__container {
+        flex-direction: row; 
+        gap: 3rem;
+    }
+    .home__img {
+        width: 320px;
+    }
+
     .about__img,
      .app__img {
         width: 380px;
@@ -529,6 +547,16 @@ a {
     }
     .contact__initial {
         margin: 2rem 0;
+    }
+
+    .home__title {
+        font-size: 4rem;
+    }
+    .home__subtitle {
+        font-size: 2rem;
+    }
+    .button {
+        font-size: 2rem;
     }
     
 
